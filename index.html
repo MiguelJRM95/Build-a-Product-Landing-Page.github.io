@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Rent Gym Equipment - Build a Landing Page</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="#"><img id="header-img" src="./img/logo.png" alt="logo"></a>
+        <nav id="nav-bar">
+            <ul id="flex-links">
+                <li><a class="nav-link" href="#rogueCard">ELEIKO</a></li>
+                <li><a class="nav-link" href="#eleikoCard">ROGUE</a></li>
+                <li><a class="nav-link" href="#othersCard">OTHERS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="videoContainer">
+            <iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/IMSK5kSjh2k?showinfo=1&rel=0&modestbranding=0" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="infoCards" class="card-deck">
+            <div  id="rogueCard"    class="card" style="width: 18rem;">
+                <img src="https://www.brandeps.com/logo-download/R/Rogue-logo-vector-01.svg" class="card-img-top" alt="..." height="200px">
+                <div class="card-body">
+                  <h5 class="card-title">ROGUE</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-success">Go Rogue</a>
+                </div>
+            </div>
+
+            <div id="eleikoCard" class="card" style="width: 18rem;">
+                <img  id="eleiko-img" src="https://seeklogo.com/images/E/eleiko-logo-151B7C06E4-seeklogo.com.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ELEIKO</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-success">Go Eleiko</a>
+                </div>
+            </div>
+
+            <div id="othersCard" class="card" style="width: 15rem;">
+                <img  id="others-img" src="https://static.wixstatic.com/media/2cd43b_5233bbe8338846cdbf23532bfc136495~mv2_d_3339_1230_s_2.png/v1/fill/w_505,h_186,fp_0.50_0.50,q_95/2cd43b_5233bbe8338846cdbf23532bfc136495~mv2_d_3339_1230_s_2.webp" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">OTHERS</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-success">Go Others</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="divForm">
+            <span>Submit your email to receive discount to buying barbells</span>
+            
+            <form id="form" action=" https://www.freecodecamp.com/email-submit" >
+                <br>
+                <input class="form-control" type="email" name="email" id="email" placeholder="email@email.com" required>
+                <br>
+                <input class="btn btn-success btn-block" type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div>
+            <p>&copy; Miguel José Rodríguez Martínez - Project for FreeCodeCamp Responsive Web Design Certification</p>
+            <a  id="github" href="https://github.com/MiguelJRM95" target="_blank" >GitHub</a>
+        </div>
+    </footer>
+ 
+   
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

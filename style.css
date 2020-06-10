@@ -1,0 +1,157 @@
+*, *::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        ".",
+        "content",
+        "footer";
+    grid-template-rows: 3fr 4rem;
+}
+
+
+header {
+    width: 100vw;
+    height: 4rem;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.288);
+    grid-area: "fixNav";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+}
+
+#header-img {
+    position: relative;
+    top: -4.29rem;
+    left: -1.9rem;
+    margin-left: 2rem;
+}
+
+#nav-bar {
+    margin-right: 1rem;
+}
+
+#flex-links {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    line-height: 45px;
+    margin-right: 1.2rem;
+    font-weight: bold;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    
+}
+
+nav ul li:hover {
+    font-weight: bold;
+    
+}
+
+nav ul li:hover a {
+    height: 4rem;
+    text-decoration: none;
+    background: rgb(50,48,48);
+    background: linear-gradient(90deg, rgba(50,48,48,1) 0%, rgba(60,57,57,1) 35%, rgba(112,116,117,1) 100%);
+    color: white;
+}
+
+main {
+    padding-top: 4.5rem;
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+    grid-area: "content";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    border-radius: 8px;
+    background: linear-gradient(145deg, #2d2b2b, #363333);
+    box-shadow:  18px 18px 40px #282626 inset, 
+                -18px -18px 40px #3c3a3a inset;
+    color: white;
+}
+
+#infoCards {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#eleiko-img {
+    margin-top: 6.2rem;
+    margin-bottom: 3.2rem;
+}
+
+#others-img{
+    margin-bottom: 1rem;
+}
+
+#divForm{
+    width: 70vw;
+    height: 15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 2.6rem;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #2d2b2b, #363333);
+    box-shadow:  18px 18px 40px #282626 inset, 
+                -18px -18px 40px #3c3a3a inset;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer {
+    max-height: 4rem;
+    background-color: black;
+    grid-area: "footer";
+    color: white;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.2rem;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer > div > a {
+    color: yellow;
+}
+
+footer > div > a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: yellow;
+}
